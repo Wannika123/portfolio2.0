@@ -1,0 +1,78 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.container p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.qa-container {
+    display: grid;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.summary {
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.summary::-webkit-details-marker {
+    display: none;
+}
+
+.summary:after{
+    content: "\002B";
+    font-size: 2rem;
+}
+
+.details[open] summary:after {
+    transform: rotate(45deg);
+    transition: transform 0.2s linear;
+}
+
+.details > div {
+    padding: 16px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    background-color: var(--secondary-text);
+    color: var(--secondary-bg);
+    display: grid;
+    grid-template-rows: 0fr;
+}
+
+.details[open] > div {
+    animation: drop-down 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+.details[open] > div > p {
+    overflow: hidden;
+}
+
+/* This animation works fine work with firefox, but with chrome, it only works the first time 
+The cause is about <details> and <summary> */
+@keyframes drop-down {
+    0% {
+        grid-template-rows: 0fr;
+    }
+    100% {
+        grid-template-rows: 1fr;
+    }
+}

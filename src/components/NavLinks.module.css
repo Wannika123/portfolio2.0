@@ -1,0 +1,71 @@
+.menu-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.menu-btn > svg > path {
+    fill: var(--header-text);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.menu a {
+    color: var(--header-text);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.mobile-menu {
+    height: fit-content;
+}
+
+.mobile-menu {
+    position: absolute;
+    width: 85%;
+    left: 0;
+    right: 0;
+    top: calc(100% + 10px);
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--header-bg);
+    padding: 0.5rem;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+.mobile-menu ul li {
+    padding: 0.3rem;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.desktop-menu ul {
+    display: flex;
+    gap: 40px;
+}
+
+.desktop-menu ul li {
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.active {
+    background-color: #ffffff30;
+}
+
+@media (min-width: 50rem) {
+    .menu-btn {
+        display: none;
+    }
+    .desktop-menu {
+        display: block;
+    }
+}
