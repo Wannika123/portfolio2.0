@@ -7,7 +7,7 @@ import checkIcon from '@/images/icon-check.svg';
 import Image from "next/image";
 import styles from './Select.module.css';
 
-const VALUES = ["React", "TypeScript", "SCSS", "Next", "API", "Web Audio API", "Animation"];
+const VALUES = ["ReactJS", "TypeScript", "NextJS", "API", "Web Audio API", "Animation", "SCSS", "TailwindCSS"];
 
 export default function Select() {
     const { selectedVals, selectAndRemoveValue, clearValues } = useContext(SelectContext);

@@ -21,7 +21,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/kbiajeinu576ltgcclbt.jpg",
             "alt": "Calculator with theme switcher"
         },
-        "tools": ["React", "SCSS"],
+        "tools": ["ReactJS", "SCSS"],
         "code": "https://github.com/Wannika123/fem-react-calculator",
         "site": "https://dynamic-dasik-f9024c.netlify.app/"
     },
@@ -34,7 +34,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/llcq9eiv3ney5tkxgdtu.jpg",
             "alt": "Todo application with theme switcher"
         },
-        "tools": ["React"],
+        "tools": ["ReactJS"],
         "code": "https://github.com/Wannika123/fem-todo-app",
         "site": "https://6617d109e4aa378bce0ae7b2--statuesque-ganache-0cce80.netlify.app/"
     },
@@ -47,7 +47,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/vccuroyji9nqbuffdch6.jpg",
             "alt": "English dictionary with theme switcher and font selector"
         },
-        "tools": ["React", "TypeScript", "API", "Web Audio API"],
+        "tools": ["ReactJS", "TypeScript", "API", "Web Audio API"],
         "code": "https://github.com/Wannika123/fem-dictionary",
         "site": "https://6649c1b6a4f26b8634bcf48f--stellar-macaron-ae2fa8.netlify.app/"
     },
@@ -60,7 +60,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/v1641565925/Challenges/bpxighj3oorldbr7wzaq.jpg",
             "alt": "Classic Tic Tac Toe game"
         },
-        "tools": ["React", "TypeScript"],
+        "tools": ["ReactJS", "TypeScript"],
         "code": "https://github.com/Wannika123/fem-tic-tac-toe",
         "site": "https://66629951927b7bbebb7f53b5--merry-figolla-1cc054.netlify.app/"
     },
@@ -86,7 +86,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/nq94jwosne8ahc2eyslv.jpg",
             "alt": "Coffeeroasters Website"
         },
-        "tools": ["React", "TypeScript", "Next"],
+        "tools": ["ReactJS", "TypeScript", "NextJS"],
         "code": "https://github.com/Wannika123/fem-multi-pages-site",
         "site": "https://fem-multi-pages-site.vercel.app/"
     },
@@ -99,7 +99,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/v1626949379/Challenges/gbhafsy09dfqcgimghxp.jpg",
             "alt": "Paintings gallery with masonary layout"
         },
-        "tools": ["React", "TypeScript", "Next"],
+        "tools": ["ReactJS", "TypeScript", "NextJS"],
         "code": "https://github.com/Wannika123/fem-gallery",
         "site": "https://fem-gallery.vercel.app/"
     },
@@ -107,12 +107,12 @@
         "id": 9,
         "title": "Multi-step form",
         "description": "Multi-step form with form validation",
-        "feature": true,
+        "feature": false,
         "img": {
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/v1676299213/Challenges/tn6hip0khjvu4qrhww7r.jpg",
             "alt": "Multi-step form"
         },
-        "tools": ["React", "TypeScript"],
+        "tools": ["ReactJS", "TypeScript"],
         "code": "https://github.com/Wannika123/fem-multi-step-form",
         "site": "https://66d546f951e7a49bb1d0c29b--quiet-alpaca-ca6935.netlify.app/"
     },
@@ -125,7 +125,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/v1699537658/Challenges/o4vnsylucskyh2bb5ycq.jpg",
             "alt": "Frontend Quiz"
         },
-        "tools": ["React", "TypeScript", "Next", "Web Audio API"],
+        "tools": ["ReactJS", "TypeScript", "NextJS", "Web Audio API"],
         "code": "https://github.com/Wannika123/fem-quiz",
         "site": "https://fem-quiz-silk.vercel.app/"
     },
@@ -138,7 +138,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/wirxeocmd6tpnn9c5oqc.jpg",
             "alt": "Countries website with theme switcher"
         },
-        "tools": ["React", "TypeScript", "Next", "API"],
+        "tools": ["ReactJS", "TypeScript", "NextJS", "API"],
         "code": "https://github.com/Wannika123/fem-countries-api",
         "site": "https://fem-countries-api-delta.vercel.app/feed"
     },
@@ -151,7 +151,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/hh5xhx2j1cprjgvpddsg.jpg",
             "alt": "Hangman game"
         },
-        "tools": ["React", "TypeScript", "Next", "Web Audio API"],
+        "tools": ["ReactJS", "TypeScript", "NextJS", "Web Audio API"],
         "code": "https://github.com/Wannika123/fem-hangman",
         "site": "https://fem-hangman-three.vercel.app/"
     },
@@ -164,7 +164,7 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sgyggipeoqrv2inrkxja.jpg",
             "alt": "Countdown Timer"
         },
-        "tools": ["React", "TypeScript", "Animation"],
+        "tools": ["ReactJS", "TypeScript", "Animation"],
         "code": "https://github.com/Wannika123/fem-countdown-timer",
         "site": "https://fem-countdown-timer-two.vercel.app/"
     },
@@ -177,8 +177,34 @@
             "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/glyb3m1iuyv9y8zzmmxc.jpg",
             "alt": "Restaurant Website"
         },
-        "tools": ["React", "TypeScript", "Next"],
+        "tools": ["ReactJS", "TypeScript", "NextJS"],
         "code": "https://github.com/Wannika123/fem-multi-page-site-2",
         "site": "https://fem-multi-page-site-2-6d45.vercel.app/"
+    },
+    {
+        "id": 15,
+        "title": "Connect Four",
+        "description": "Connect Four game with both player mode and cpu mode. There's also a countdown timer.",
+        "feature": true,
+        "img": {
+            "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/qd1p2yaogl41ymtozppc.jpg",
+            "alt": "Connect Four game"
+        },
+        "tools": ["ReactJS", "TypeScript", "NextJS"],
+        "code": "https://github.com/Wannika123/fem-connect-4-game",
+        "site": "https://fem-connect-4-game.vercel.app/"
+    },
+    {
+        "id": 16,
+        "title": "Myteam Website",
+        "description": "Typical multi-page website with form submission.",
+        "feature": false,
+        "img": {
+            "src": "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/ixjx74lti9wkn6hu7f21.jpg",
+            "alt": "Myteam Website"
+        },
+        "tools": ["ReactJS", "TypeScript", "NextJS", "TailwindCSS"],
+        "code": "https://github.com/Wannika123/fem-multi-page-site-3",
+        "site": "https://fem-multi-page-site-3.vercel.app/"
     }
 ]
