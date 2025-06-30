@@ -1,12 +1,15 @@
-import ProjectDetails from '@/components/projects/ProjectDetails';
+import ProjectDetails from "@/components/projects/ProjectDetails";
+import { getProject } from "@/lib/projects";
 
 type Props = {
-    params: Promise<{ id: string }>
-}
+    params: Promise<{ id: string }>;
+};
 
 export default async function ProjectIdPage({ params }: Props) {
     const currParams = await params;
     const id = currParams.id;
 
-    return <ProjectDetails id={Number(id)} />
+    const project = getProject(Number(id));
+
+    return <ProjectDetails project={project} isModal={false} />;
 }

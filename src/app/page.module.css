@@ -16,7 +16,7 @@
 }
 
 .profile-pic-container img {
-    width: 100%;   
+    width: 100%;
     object-fit: cover;
 }
 
@@ -36,7 +36,8 @@
     margin-bottom: 1.75rem;
 }
 
-.description p, .description a {
+.description p,
+.description a {
     font-size: 1.125rem;
     line-height: 1.5rem;
     padding: 0.375rem;
@@ -45,6 +46,12 @@
 .description a {
     color: var(--grid-container-text);
     text-decoration: underline;
+}
+
+.cs50-link,
+.cs50-link a {
+    color: var(--secondary-text);
+    font-size: 0.95rem;
 }
 
 .languages {

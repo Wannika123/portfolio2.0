@@ -1,57 +1,62 @@
-import { notFound } from "next/navigation"
-import styles from './ProjectDetails.module.css'
-import Image from "next/image"
-import projects from '@/data/projects.json'
+import styles from "./ProjectDetails.module.css";
+import Image from "next/image";
+import type { Project } from "@/lib/projects";
 
 type Props = {
-    id: number
-}
+    project: Project;
+    isModal: boolean;
+};
 
-export default function ProjectDetails({ id }: Props) {
-    const project = projects.find(project => project.id === Number(id));
-
-    if (!project) {
-        notFound()
-    }
-
+export default function ProjectDetails({ project, isModal }: Props) {
+    const isCS50Page = project.id === 17 && !isModal;
     return (
         <div className={styles.container}>
-            <div className={styles['img-container']}>
-                <Image 
-                    src={project.img.src} 
-                    alt={project.img.alt} 
+            <div className={styles["img-container"]}>
+                <Image
+                    src={project.img_src}
+                    alt={project.title}
                     width={500}
                     height={450}
                 />
             </div>
-            <div className={styles['text-container']}>
+            <div className={styles["text-container"]}>
                 <h1>{project.title}</h1>
                 <p>{project.description}</p>
                 <div className={styles.tools}>
                     <h2>Built with:</h2>
                     <div>
-                        {project.tools.map(tool => (
-                            <div key={tool} className={styles.tool}>{tool}</div>
+                        {project.tools.map((tool) => (
+                            <div key={tool} className={styles.tool}>
+                                {tool}
+                            </div>
                         ))}
                     </div>
                 </div>
+                {isCS50Page && (
+                    <div className="cs50-video-wrapper">
+                        <iframe
+                            className="cs50-video"
+                            src="https://www.youtube.com/embed/6IMRySl7ZEk"
+                        ></iframe>
+                    </div>
+                )}
                 <div className={styles.links}>
                     <a
                         href={project.site}
                         target="_blank"
-                        className={styles['site-btn']}
+                        className={styles["site-btn"]}
                     >
                         preview site
                     </a>
                     <a
                         href={project.code}
                         target="_blank"
-                        className={styles['code-btn']}
+                        className={styles["code-btn"]}
                     >
                         view code
                     </a>
                 </div>
             </div>
         </div>
-    )
+    );
 }
