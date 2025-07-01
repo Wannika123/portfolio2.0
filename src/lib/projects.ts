@@ -32,7 +32,7 @@ export const getAllProjects = (): Project[] => {
     return rawProjects.map((preject) => processProject(preject));
 };
 
-export const getProject = async (id: number): Promise<Project> => {
+export const getProject = (id: number): Project => {
     const rawProject = db
         .prepare(`SELECT * FROM projects WHERE id = ?`)
         .get(id) as RawProject;
