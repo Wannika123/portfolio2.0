@@ -40,6 +40,14 @@ export const getProject = (id: number): Project => {
     return processProject(rawProject);
 };
 
+export const getProjectCount = () => {
+    const count = db
+        .prepare("SELECT COUNT(*) AS count FROM projects")
+        .get() as { count: number };
+
+    return count.count;
+};
+
 const processProject = (project: RawProject): Project => {
     const result: Project = {
         id: 0,
