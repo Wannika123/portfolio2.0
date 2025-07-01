@@ -1,5 +1,5 @@
 // import ProjectDetails from "@/components/projects/ProjectDetails";
-import { getAllProjects } from "@/lib/projects";
+import { getProject } from "@/lib/projects";
 
 type Props = {
     params: Promise<{ id: string }>;
@@ -9,14 +9,12 @@ export default async function ProjectIdPage({ params }: Props) {
     const currParams = await params;
     const id = currParams.id;
 
-    // const project = await getProject(Number(id));
-
-    const projects = getAllProjects();
+    const project = await getProject(Number(id));
 
     return (
         <>
             {id}
-            {projects[0].title}
+            {project.title}
             {/* <ProjectDetails project={project} isModal={false} />; */}
         </>
     );
