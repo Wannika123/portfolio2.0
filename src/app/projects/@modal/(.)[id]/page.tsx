@@ -9,7 +9,7 @@ export default async function ProjectIdModal({ params }: Props) {
     const currParams = await params;
     const id = currParams.id;
 
-    const project = getProject(Number(id));
+    const project = await getProject(Number(id));
 
     return (
         <>
